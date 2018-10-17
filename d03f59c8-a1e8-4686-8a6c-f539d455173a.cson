@@ -1,0 +1,31 @@
+createdAt: "2018-10-01T14:49:14.360Z"
+updatedAt: "2018-10-02T07:51:57.698Z"
+type: "MARKDOWN_NOTE"
+folder: "f0c7aae407ee3ecfae75"
+title: "Regex"
+content: '''
+  #### Regex
+  Some regex syntax:
+  
+  \\d matches digits 0-9
+  \\D not a digit
+  
+  \\w matches any letter, digit, or underscore
+  \\W not a word character
+  
+  \\s matches whitespace
+  \\S not a whitespace character
+  
+  . matches anything except a new line
+  #### Quantifiers
+  Specificies how many times something should occur in a pattern.
+  \\+ one or more
+  {3} Exactly 3 times
+  {3,5} Three to five times
+  {4,} 4 or more times
+  \\* Zero or more times
+  ? Zero or one times
+'''
+tags: []
+isStarred: false
+isTrashed: false

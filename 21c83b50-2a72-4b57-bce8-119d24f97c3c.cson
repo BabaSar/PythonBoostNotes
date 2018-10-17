@@ -1,0 +1,40 @@
+createdAt: "2018-10-01T10:47:54.162Z"
+updatedAt: "2018-10-15T10:37:46.123Z"
+type: "MARKDOWN_NOTE"
+folder: "f0c7aae407ee3ecfae75"
+title: "Loops - break and continue statements"
+content: '''
+  #### Loops - break and continue statements
+  
+  Python uses break and continue statements to alter the flow of a loop.
+  
+  Loops iterate over a block of code until the test expression is false, but sometimes we may want to either stop the loop entirely (break out of it) or skip the current iteration (continue to next iteration).
+  
+  An example of a break statement:
+  
+  ```python
+  for char in "hello":
+      if char == "l":
+          break
+      print(char)
+  #h
+  #e
+  ```
+  Notice that the output doesn't get to print the character *l* because the code breaks out of the loop.
+  
+  Compare this with the example below, where we can use the continue statement to skip over or ignore the character l but continue to iterate afterwards ():
+  ```python
+  for char in "hello":
+      if char == "l":
+          continue
+      print(char)
+  #h
+  #e
+  #o
+  ```
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

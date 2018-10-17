@@ -1,0 +1,62 @@
+createdAt: "2018-10-16T15:17:13.595Z"
+updatedAt: "2018-10-17T13:49:56.142Z"
+type: "MARKDOWN_NOTE"
+folder: "f0c7aae407ee3ecfae75"
+title: "Lists - Lists Methods Append, Extend & Insert"
+content: '''
+  ##### Lists - Lists Methods Append, Extend & Insert
+  There are a few commonly used and useful list methods such as append, insert and extend. We already know about len() but we'll dive into a few more here.
+  
+  ##### Append
+  This is used to add an item to the end of the list
+  ```python
+  data = [1,2,3]
+  data.append("peanut butter")
+  
+  print(data) # [1,2,3,"peanut butter"]
+  ```
+  But what if you tried appending more than one item? It won't work! The append method only accepts one argument:
+  ```python
+  data.append("adding", "more", "stuff") # This does not work!
+  ```
+  What about adding a list at the end of a list?
+  ```python
+  data.append(["trying","to","be","clever"])
+  
+  print(data) #[1,2,3,"peanut butter", ["trying","to","be","clever"]]
+  ```
+  As you can see, it just appends the whole list to the end i.e a nested list. 
+  If we were to then use len() on the list, there would only be one extra item because the nested list is one item even though it consists of many things.
+  
+  What we need to use instead to achieve what we want is the extend() method
+  ##### Extend
+  ```python
+  my_numers = [1,2,3]
+  my_numbers.extend([4,5,6])
+  
+  print(my_numbers) # [1,2,3,4,5,6]
+  ```
+  So far **append()** and **extend()** adds things to the end of a list. But what if you want to add something elsewhere; perhaps in the middle or at some specific index? This is where insert() comes in to play.
+  
+  ##### Insert
+  Insert can be used to insert items at a given position in a list, so we're not limited to only adding something to the end even though thats something that's commonly done.
+  
+  Here's a simple example:
+  
+  ```python
+  stuff = [1,2,3,4]
+  stuff.insert(2, "Middle")
+  
+  print(stuff) # [1,2,"Middle",3,4]
+  ```
+  As you can see, it becomes the new item at index 2. Everything else just shifts over by one to the right.
+  
+  You could also insert something at the very end by using an index of -1, but then again you could just use append() which does that anyway.
+  
+  We will next look at further list methods such as clear(), pop() and remove()
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

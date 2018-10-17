@@ -1,0 +1,112 @@
+createdAt: "2018-09-28T22:11:39.400Z"
+updatedAt: "2018-09-30T18:56:07.106Z"
+type: "MARKDOWN_NOTE"
+folder: "b1f2b4f3ac81463273cd"
+title: "Boolean and Conditional Logic"
+content: '''
+  ## Boolean and Conditional Logic
+  
+  ### Logical AND and OR
+  
+  And example of AND:
+  
+  ```python
+  a = 10
+  b = 3
+  
+  if a > 5 and b < 5:
+    print("This will only print if both are true")
+  ```
+  
+  And example of OR:
+  
+  ```python
+  city = input("Where do you live?")
+  
+  if city == "London" or city == "Scotland":
+  	print("You live in the UK!") #prints if either is true
+  ```
+  ### Logical NOT
+  
+  These are truthy if the opposite is true. Sounds a bit strange but let's look at an example, which is hopefully self explanatory.
+  
+  ```python
+  is_weekend = False
+  
+  if is_weekend:
+    print("It's the weekend!") # This won't print
+  
+  if not is_weekend:
+    print("Hang in there!") # This will print
+  ``` 
+  ### A Note on is vs ==
+  
+  In Python, "==" and "is" are similar but not the same.
+  
+  Essentially, "==" looks to see if the values are the same. And doesn't care where they are in memory.
+  
+  And "is" checks whether they are located in the same place in memory i.e if their memory address is the same
+  
+  ```python
+  a = 1
+  a == 1 # true
+  a is 1 # true
+  ```
+  We can see that the memory address for both a and 1 is the same (using the id() function):
+  ```
+  >>> a=1
+  >>> id(a)
+  4302830592
+  >>> id(1)
+  4302830592
+  >>> 
+  ```
+  Now another example:
+  ```python
+  a = [1, 2, 3]
+  b = [1, 2, 3]
+  a == b # true because both are the same in value
+  a is b # false as they are not in the same location in memory
+  ```
+  Here we see below that the memory addresses are in fact not the same. This is why one "is" not the other.
+  ```
+  >>> a = [1,2,3]
+  >>> b = [1,2,3]
+  >>> id(a)
+  4419058568
+  >>> id(b)
+  4419059592
+  ```
+  A great analogy of this concept are identical twins. Are they identical? Yes. Are they the same person? No, they are not. They are two distinct people, in different places but they look the same on the surface.
+  
+  Lastly, if you do assign a variable to another variable they share the same place in memory. For example:
+  ```python
+  b = a
+  a is b # True
+  b is a # True
+  ```
+  What happened above is we actually get a and b to point to the same place in memory. So if we assign a variable to another variable that is what we are doing; just creating another variable to point to the same thing/place in memory.
+  
+  Interestingly, if we were to assign two separate variables the same number they will not only be equal but also the be located in the same place in memory. This is because if we assign a number to a variable, that number is not a new object; a new object instance was not created as there is only one of those numbers in memory. So we can do something like this:
+  ```python
+  x = 13
+  y = 13
+  
+  x == y # This is obviously True
+  x is y # This is also True because there's only one 13 in memory
+  ```
+  #### "is" is just syntactic sugar
+  The "is" statement is just syntactic sugar for:
+  ```
+  "id(a) == id(b)"
+  ```
+  
+  
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

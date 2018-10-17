@@ -1,0 +1,77 @@
+createdAt: "2018-09-29T20:27:32.467Z"
+updatedAt: "2018-10-17T18:05:57.894Z"
+type: "MARKDOWN_NOTE"
+folder: "2ed07fb5f875c28407fd"
+title: "Loops Basics"
+content: '''
+  # Loops Basics
+  
+  We will focus on for loops and while loops.
+  
+  ## For loops
+  
+  The basic idea of a loop is that you can loop through an iterable object such as a list, a string of characters, a range etc.
+  
+   Pseudo code below:
+  ```python
+  for item in iterable_object:
+    # do something with item
+  ```
+  ```python
+  for each_character in "hi":
+    print(each_character)
+  #h
+  #i
+  ```
+  ```python
+  for num in range(1,4):
+    print(num)
+  #1
+  #2
+  #3
+  ```
+  ### A closer look at ranges
+  A range is commonly used in for loops as seen earlier. A range is just a slice of the number line. 
+  
+  The first number is its starting point and the second number is the stopping point. The first number is included (inclusive), but the second is not (exclusive). 
+  
+  But you can also add a third argument to the range function, to signify the step e.g
+  ```python
+  for i in range(0,11,2):
+    print(i)
+  #0
+  #2
+  #4
+  #6
+  #8
+  #10
+  ```
+  We can use the range function on its own e.g
+  ```python
+  x = range(10)
+  print(x)
+  #[0,1,2,3,4,5,6,7,8,9]
+  ```
+  ## While loops
+  Anything that can be done with a for loop can also be done with a while loop.
+  
+  In while loop, the code in the loop will run for as long as the condition given is true.
+  
+  Psuedo code to drive the point home below:
+  ```python
+  while im_thirsty:
+    # take a sip of water
+  ```
+  You would keep taking sips of water while you are thirsty. But you'd stop once you weren't thirsty anymore.
+  
+  Here's another example:
+  ```python
+  user_input = None
+  while user_input != "please":
+    user_input = input("What's the magic word?")
+  ```
+  The code above will keep asking the user for the magic until the user types "please".
+'''
+tags: []
+isStarred: false
+isTrashed: false

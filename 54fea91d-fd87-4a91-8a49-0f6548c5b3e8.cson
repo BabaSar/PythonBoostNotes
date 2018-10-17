@@ -1,0 +1,77 @@
+createdAt: "2018-10-15T12:45:02.554Z"
+updatedAt: "2018-10-16T15:15:40.387Z"
+type: "MARKDOWN_NOTE"
+folder: "f0c7aae407ee3ecfae75"
+title: "Lists"
+content: '''
+  #### Lists
+  In Python, lists are a data structure for organizing data.
+  
+  A simple list can look like this:
+  
+  ```python
+  tasks = ["eat", "pray", "love"]
+  ```
+  But you can also mix and match the data types in a list:
+  ```python
+  my_list = ["one", 2, false]
+  ```
+  The length i.e how many items of a list can be determined using len() as follows:
+  
+  ```python
+  demo_list = ["hello", "goodbye", "welcome"]
+  
+  print(len(demo_list)) # 3
+  ```
+  Finding out how many items there can be useful if you need to loop through it using an index, for example:
+  
+  ```python
+  for i in range(len(demo_list)):
+       print(demo_list[i])   
+   ```
+  ##### Accessing data in Lists
+  Lists start at index zero.
+  ```python
+  demo_list = ["hello", "goodbye", "welcome"]
+  
+  print(demo_list[0]) # "hello"
+  ```
+  You can loop through using the index as shown earlier. And you can also do the following:
+  
+  ```python
+  for each_item in demo_list:
+      print(each_item)
+  
+  #hello
+  #goodbye
+  #welcome
+  ```
+  ##### Check if a value exists in a list
+  You can also check if an item exists in a list using the *in* keyword:
+  ```python
+  "hello" in demo_list # True
+  "hey" in demo_list # False
+  ```
+  ##### Iterating Over Lists
+  Use a for loop or while loop to iterate over a list.
+  ```python
+  colors = ["teal", "magenta","blue"]
+  
+  #using a for loop
+  for color in colors:
+      print(color)
+      
+  #using a while loop
+  i = 0
+  while i < len(colors):
+      print(colors[i])
+      i += 1
+  ```
+  
+  
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false

@@ -1,0 +1,60 @@
+createdAt: "2018-10-17T13:50:03.797Z"
+updatedAt: "2018-10-17T15:11:45.276Z"
+type: "MARKDOWN_NOTE"
+folder: "f0c7aae407ee3ecfae75"
+title: "Lists - Lists Methods Clear, Pop & Remove"
+content: '''
+  ##### Lists - Lists Methods Clear, Pop & Remove
+  
+  ###### Clear
+  
+  Let's start with clear(). If we wanted to remove the contents of a list, we could probably do something like this:
+  
+  ```python
+  my_list = [1,2,3]
+  my_list = [] #becomes an empty list
+  print(my_list) # []
+  ```
+  But there is also another way to achieve this using clear() as follows:
+  
+  ```python
+  my_list = [1,2,3]
+  my_list.clear() #becomes an empty list
+  print(my_list) # []
+  ```
+  One of the advantages of using clear() is that its obvious to somebody reading your code, what you inteded to do.
+  
+  ###### Pop
+  Using pop() without passing an argument will default to removing the last item from the list (in similar fashion to JavaScript), and then returns the recently removed item.
+  
+  If an argument is passed in, then it will remove the item at that particular index position.
+  
+  Examples below:
+  
+  ```python
+  stuff = ["one", "two", "three"]
+  stuff.pop() # "three"
+  
+  more_stuff = ["blue", "red", "yellow"]
+  more_stuff.pop(1) # "red"
+  ```
+  It can be useful that the item is returned, because maybe you want to then print a message to the screen like "You removed 'red' from the list" or something to that effect.
+  
+  Another way to remove an item from a list is by using the remove() method, which doesn't take an index but rather an item as the argument which we'll explore now.
+  ###### Remove
+  Remove will find the match and remove the first instance of it. If it can't find it, then it will throw an error:
+  ```python
+  first_list = [1,2,3,5,5,5,6]
+  first_list.remove(5)
+  
+  print(first_list) # [1,2,3,5,5,6]
+  ```
+  In the above example, the first instance of the number 5 was found and removed, but the others remain.
+  
+  We will move on to further list methods in the next section, namely Index, Count, Sort, Reverse and Join.
+  
+  
+'''
+tags: []
+isStarred: false
+isTrashed: false
