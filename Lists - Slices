@@ -1,0 +1,45 @@
+# ===============
+# Lists - Slices
+# ===============
+
+# Allows us to make copies of portions of a list (a slice of a list) from one index to another. 
+# It doesn't affect the original list, just makes a copy that you could store into a variable
+
+some_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+some_list[5:] # Starts at and includes index 5, then continues from there until the end 
+some_list[9:] # [9,10]
+# It's important to note that without the colon above, it won't know that you're asking for a slice
+
+some_list[3:7] # [3,4,5,6] Notice that 7 is NOT included just like in the range() function
+
+#We can also specify an increment, similar to the range() function
+some_list[0:10:2] 
+# The above tells python to start at 0, go up to (but not including) 10, in increments of 2 i.e [0,2,4,6,8] 
+
+# Essentially, the format is some_list[start:end:step] but you don't need to provide a  start, step or an end!
+
+# For example, say we wanted to slice just the last item from a list, you could do something like:
+some_list[-1:] # [10]
+
+odds_only = some_list[1::2] # We can omit the end variable, it will just go to the end
+# The above gives the result [1, 3, 5, 7, 9]
+
+# If we want to start at the beginning, and up to a certain number, you can do:
+some_list[:5]
+# which is the same as:
+some_list[0:5] # So you can do away with providing the 0 at the beginning because it will be default start there.
+
+# To reverse a list in this way, other than using reverse(), you can use:
+some_list[::-1]
+
+# You can also use slicing to UPDATE a portion of a list
+
+first_list = ["red", "blue", "yellow", "green", "silver"]
+first_list[2:4] = ["YELLOW", "GREEN"] # ['red', 'blue', 'YELLOW', 'GREEN', 'silver']
+
+# You can also reverse a particular item within a list
+reverse_yellow = first_list[2][::-1] # WOLLEY
+
+# You can use slices directly on a string:
+"HELLO"[:-1] # 'O'
