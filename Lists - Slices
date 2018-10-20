@@ -7,7 +7,7 @@
 
 some_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-some_list[5:] # Starts at and includes index 5, then continues from there until the end 
+some_list[5:] # Starts at (and includes) index 5, then continues from there until the end 
 some_list[9:] # [9,10]
 # It's important to note that without the colon above, it won't know that you're asking for a slice
 
