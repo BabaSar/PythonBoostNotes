@@ -1,0 +1,7 @@
+# If you ever need to swap items in a list, you could do this
+
+my_list = ["red", "green"]
+my_list[0], my_list[1] = my_list[1], my_list[0]
+
+print(my_list) # ["gren", "red"]
+# Not sure if you would ever need to do this, but there you go
