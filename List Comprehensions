@@ -1,0 +1,55 @@
+# ===========================
+# List Comprehensions
+# ===========================
+
+# It's difficult to explain without an example
+# But let's take a look at an example first:
+
+numbers = [1,2,3,4,5]
+
+[num**2 for num in numbers] # [1,4,9,16,25]
+
+# So above shows it squares each number for each number in the numbers list
+# It's like saying "Do this, for each item in this iterable"...
+#[DO THIS to each_item for each_item in some_iterable]
+
+# But this does not change the original in any way, it just makes a new list
+
+my_name = "baba"
+[character.upper() for character in my_name] #['B', 'A', 'B', 'A']
+
+names = ["vignesh", "venugopal", "mitchell"]
+[name[0].upper()+name[1:] for name in names] #['Vignesh', 'Venugopal', 'Mitchell']
+
+# An example involving a range:
+[num*10 for num in range(1,5)] # [10, 20, 30, 40]
+
+# An example with bool
+[bool(item) for item in ["0", "", [], "1", "hello"]] #[True, False, False, True, True]
+
+# An example of converting a list of ints to strings
+my_ints = [1,2,3,4,5]
+[str(each_int) for each_int in my_ints] # ['1', '2', '3', '4', '5']
+
+# =============================================
+# List Comprehensions - With Conditional Logic!
+# =============================================
+
+# These are like normal list comprehensions, but with an if statement
+# added to the end e.g:
+
+my_ints = [1,2,3,4,5]
+[str(each_int) for each_int in my_ints if each_int % 2 == 0] # ['2','4']
+
+# So just do the normal list comprehension but add your required
+# if-statement after it
+
+# It's like saying "Do this, for each item in this iterable, IF some condition is true"...
+
+# BUT if you want to add an else, ie if-else statement, then the format
+# becomes very different:
+
+[num*2 if num % 2 == 0 else num/2 for each_int in my_ints]
+
+# As you can see above, the if/else part comes before the 'for' bit
+
