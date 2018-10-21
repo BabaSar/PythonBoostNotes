@@ -53,3 +53,7 @@ my_ints = [1,2,3,4,5]
 
 # As you can see above, the if/else part comes before the 'for' bit
 
+with_vowels = "This is so much fun"
+"".join([char for char in with_vowels if char not in "aeiou"]) #'Ths s s mch fn'
+
+
