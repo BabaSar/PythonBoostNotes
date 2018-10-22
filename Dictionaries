@@ -1,0 +1,70 @@
+# ==================
+# DICTIONARIES
+# ==================
+
+# You will have to choose between using lists or dictionaries depending on what you want to achieve
+
+# Looking at the following list, you can see that it can be a little difficult to understand what
+# each of the values are referring to:
+
+student = ["Steve", True, 5, "Python", False]
+
+# OK we see it's about a student, what what is True? and what is False, and what does the 5 refer to?
+
+# We would be able to have a little more context if we used a dictionary with key/value pairs:
+
+instructor = {
+	"name": "Colt",
+	"language": "Python",
+	"number_of_courses": 5
+}
+
+# We can immediately see from above what each value means
+
+# You can also have a list of dictionaries, or a dictionary that contains lists so its very flexible
+
+cat = {
+	"name": "blue", 
+	"age": 3.5, 
+	"isCute": True
+}
+
+# Another way to create dictionaries is to use the dict function
+
+another_dictionary = dict(some_key = "some_value") # But I don't see the point of using this 
+
+kitten2 = dict(name="lilSultan")
+
+# Accessing Individual Values
+# ===========================
+
+# We can access dictionary values using the key:
+
+instructor["language"] # 'Python'
+instructor["name"] # 'Colt'
+
+# If you use a key that doesnt exist, you will get a key error
+
+# Iterating Over a Dictionary
+# ===========================
+
+# With lists its very simple, but an extra step is needed for a dictionary
+
+# You can loop through 1) values 2) keys 3) BOTH keys and values
+
+for value in instructor.values():
+	print(value)
+
+for key in instructor.keys():
+	print(key)
+
+for key,val in instructor.items():
+	print(f"key is: {key} and value is: {val}")
+
+# Using In With Dictionaries
+# ===========================
+
+# You can test for the existence of a particular key or value in a dictionary using In
+# This is more graceful than trying to retrieve the value for a key that doesn't exist, resulting in a key error
+
+
